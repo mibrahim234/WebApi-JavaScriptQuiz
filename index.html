@@ -7,6 +7,20 @@
     <title>JavaScript Quiz</title>
 </head>
 <body>
+    <div class="scores"></div>
+    <div class="timer"></div>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+           <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="start">Start Quiz</button>
+           <h2 id="countdown"></h2>
+           <p id="main"></p>
+        </div>
+        <div id="questions" class="hide"></div>
+        <div id="end-screen" class="hide"></div>
+        <div id="feedback" class="feedback-hide"></div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
