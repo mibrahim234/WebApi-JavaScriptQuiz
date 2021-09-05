@@ -17,5 +17,15 @@ function startTimer() {
 
 function sendMessage () {
     alert("Time's Up!");
+    submitHighscores();
 }
-console.log(startTimer);
+
+function startQuestions () {
+    startTimer();
+    openingPg.classList.add("hide");
+    questionsPg.classList.remove("hide");
+    getQuestions();
+}
+
+// launch functions and event listeners
+startBtn.addEventListener("click", startQuestions);
