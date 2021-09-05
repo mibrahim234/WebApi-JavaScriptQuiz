@@ -2,7 +2,7 @@
 
 ## Description
 This is a coding quiz made with HTML, CSS, and JavaScript. 
-This website is designed to quiz a user on their basic knowlede of JavaScript. 
+This website is designed to quiz a user on their basic knowledge of JavaScript. 
 
 ## How It Works 
 The user goes through the quiz by clicking the buttons and submitting their answers. <br>
