@@ -7,7 +7,7 @@ var timerInterval = 0;
 function startTimer() {
     timerInterval = setInterval(function() {
         time--;
-        timerInterval.textContent = "Time: " + time;
+       // timerInterval.textContent = "Time: " + time;
         if(time === 0) {
             clearInterval(timerInterval);
             sendMessage();
