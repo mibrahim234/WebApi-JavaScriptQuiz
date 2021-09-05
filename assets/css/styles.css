@@ -1,3 +1,28 @@
-body {
-    background-color: orangered;
+
+
+ :root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
 }
+
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #001f3f;
+ }
+
+ nav  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+ }
+
+ .wrapper {
+     max-width: 500px;
+     margin: auto;
+     text-align: center;
+     margin-top: 100px;
+ }
