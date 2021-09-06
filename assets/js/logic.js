@@ -1,5 +1,10 @@
 let timerEl = document.querySelector("#timer");
 var startBtn = document.querySelector("#start");
+var highscoresBtn = document.querySelector("#highscores");
+var openingPg = document.querySelector("#opening-page");
+var questionsPg = document.querySelector("#questions-page");
+var currentQuestionIndex = 0;
+var score = 0;
 var time = (questions.length * 10) + 1;
 var timerInterval = 0;
 
@@ -20,6 +25,11 @@ function sendMessage () {
     submitHighscores();
 }
 
+function clear () {
+    window.localStorage.clear();
+    initialsEl.innerHTML = "";
+}
+
 function startQuestions () {
     startTimer();
     openingPg.classList.add("hide");
@@ -29,3 +39,12 @@ function startQuestions () {
 
 // launch functions and event listeners
 startBtn.addEventListener("click", startQuestions);
+highscoresBtn.addEventListener("click", viewHighscores);
+submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (userInitials.value === "") {
+        alert("Initials Cannot Be Blank!");
+        return;
+    }
+    submitHighscores()
+})
