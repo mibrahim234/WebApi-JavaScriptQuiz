@@ -1,5 +1,6 @@
 var timerEl = document.querySelector("#timer");
 var startBtn = document.querySelector("#start");
+var startPage = document.querySelector(".start");
 var highscoresBtn = document.querySelector("#highscores");
 var openingPg = document.querySelector("#opening-page");
 var questionsPg = document.querySelector("#questions-page");
@@ -20,6 +21,15 @@ var score = 0;
 // Timer that counts down from 5
 function countdown() {
     var timeLeft = 100;
+   // questionEl.textContent = questions[0].title;
+     //questionEl.textContent = questions[0].choices;
+     // questionEl.textContent = questions[0].answer;
+    
+
+    //for loop that either creates a button inthe for loop or that runs through the button and adds each text content 
+    // questions[0].answer is an array that you can loop over 
+    startPage.classList.add("hide");
+    questionsPg.classList.add("show");
     var timeInterval = setInterval(function() {
       if (timeLeft > 1) {
         timerEl.textContent = timeLeft + ' seconds remaining';
@@ -43,5 +53,5 @@ function clear () {
     initialsEl.innerHTML = "";
 }
 
-
 startBtn.onclick = countdown;
+

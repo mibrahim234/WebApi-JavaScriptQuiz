@@ -36,3 +36,11 @@ body {
     font-size: 20px;
     color: black;
  }
+
+ .hide {
+     display: none;
+ }
+
+ .show {
+     display: block;
+ }

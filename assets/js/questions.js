@@ -1,6 +1,6 @@
 var questions = [
     {
-        title: "Commonly used data types DO NOT inlude?",
+        title: "Commonly used data types DO NOT include?",
         choices: ["Strings", "Boolean", "Alerts", "Numbers"],
         answer: "Alerts"
     },

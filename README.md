@@ -16,7 +16,7 @@ At the end of the quiz or when the time runs out, the user will type their initi
  These scores will be stored into local storage. 
  The local storage can be cleared by the user. 
  
- ![JS Coding Quiz ScreenShot]()
+ ![JS Coding Quiz ScreenShot](assets/images/codingquiz.PNG)
 
 ## Built With
 * HTML
