@@ -44,3 +44,7 @@ body {
  .show {
      display: block;
  }
+
+ #question {
+     text-align: center;
+ }
