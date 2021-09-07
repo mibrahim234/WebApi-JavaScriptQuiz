@@ -17,11 +17,11 @@ var goBackBtn = document.querySelector("go-back");
 var clearBtn = document.querySelector("#clear-highscores");
 var currentQuestionIndex = 0;
 var score = 0;
-// Timer that counts down from 5
+
+// Timer that counts down from 100
 function countdown() {
     var timeLeft = 100;
 
-    //for loop that either creates a button inthe for loop or that runs through the button and adds each text content 
     // questions[0].answer is an array that you can loop over 
     startPage.classList.add("hide");
     questionsPg.classList.add("show");
@@ -48,12 +48,31 @@ function clear () {
     initialsEl.innerHTML = "";
 }
 
-startBtn.onclick = countdown;
+//startBtn.onclick = countdown;
+
+//function runBuddy(params) {
+ //for (let index = 0; index < array.length; index++) { }}
+
+   
+
 
 
 startBtn.addEventListener("click", function() {
   for (var i = 0; i < questions.length; i++) {
     
   }
+  // target question card and change the css to show display block 
+  //questionsPg
+  questionsPg.setAttribute("style", "display:block;");
+
+  // the start page will be hidden
+ // startPage
+ startPage.setAttribute("style", "display:hide;");
+
+countdown();
+
+//runBuddy(); 
+
+
   questions();
 });
