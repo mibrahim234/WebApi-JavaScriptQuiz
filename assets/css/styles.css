@@ -37,14 +37,17 @@ body {
     color: black;
  }
 
- .hide {+
-     display: none;
- }
-
- .show {_
-     display: block;
- }
-
  #question {
      text-align: center;
+ }
+
+ #choices {
+     text-align: center;
+ }
+
+ #continue {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center ;
  }
